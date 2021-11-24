@@ -24,6 +24,8 @@
 This function is from nicm@ and also in gsoares@'s config.
 Most useful with c-offset-alist entries that are lists such as
 arglist-cont-nonempty"
+  (require 'cc-defs)
+
   (save-excursion
     (goto-char (cdr langelem))
     (setq syntax (car (car (c-guess-basic-syntax))))
